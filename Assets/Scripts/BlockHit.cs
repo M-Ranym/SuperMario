@@ -21,7 +21,7 @@ public class BlockHit : MonoBehaviour
     private void Hit()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.enabled = true; // show if hidden
+        spriteRenderer.enabled = true; 
 
         maxHits--;
 

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-1)]
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Application.targetFrameRate = 60;
-        // Menu shows first — no auto NewGame()
+        
     }
 
     private void Update()
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         lives--;
         if (lives > 0) LoadLevel(world, stage);
-        else NewGame(); // back to menu
+        else NewGame(); 
     }
 
     public void AddCoin() { coins++; AddScore(200); if (coins == 100) { coins = 0; AddLife(); } }
